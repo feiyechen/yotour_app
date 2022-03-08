@@ -1,38 +1,723 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+    min-height: 75vh;
+    width: 80%;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+    text-align: justify;
 }
 
-.App-link {
-  color: #61dafb;
+/*navbar*/
+.navbar {
+    background-color: #dadada;
+    height: 80px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-content {
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(33, 33, 33);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Racing Sans One';
+    font-size: 36px;
+}
+
+.navbar-list {
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+/*searchbox*/
+.searchbox input {
+    width: 300px;
+    height: 30px;
+    border-radius: 20px 20px 20px 20px;
+    border: 0;
+    padding: 5px 5px 5px 15px;
+}
+
+.searchbox button {
+    margin-left: 10px;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px 20px 20px 20px;
+    border: 0;
+    padding: 5px 10px 5px 10px;
+}
+
+/*mobile menu*/
+.mobile-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.mobile-menu div {
+    width: 100%;
+    background-color: rgb(62, 97, 97);
+    height: 50px;
+    color: #f1f1f1;
+    display: table;
+}
+
+.mobile-menu a {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 5%;
+}
+
+.menu-logo {
+    display: none;
+    height: 24px;
+}
+
+/*NavbarLogin Dropdown*/
+.navbar-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-dropdown-btn {
+    height: 40px;
+    width: 80px;
+    border-radius: 20px 20px 20px 20px;
+    border: 0;
+}
+
+.navbar-dropdown-content {
+    margin-top: 10px;
+    color: rgb(33, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 80px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+    right: 0;
+}
+
+.navbar-dropdown-content a {
+    padding-left: 10px;
+
+}
+
+/*Banner*/
+.banner-section {
+    height: calc(100vh - 60px);  
+    /* z-index: 1; */
+    color:white;
+    font-weight:bolder;
+    background-image: url("./assets/img/banner02.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-section h1 {
+    margin: 0px 20px 0 20px;
+    font-size:3rem;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-section div {
+    height:100%;
+}
+
+/*resort card*/
+.card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+.card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 200px;
+}
+
+.tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.tag-pink {
+    background-color: #cd5b9f;
+}
+
+.card-body h4 {
+    margin: 15px 0 15px 0;
+}
+
+.card-body p {
+    font-size: 13px;
+    margin: 0px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.card-body-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*featured resorts*/
+.featured-resorts-section h2 {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.featured-resorts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*featured collection*/
+.featured-collection-section h2 {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.featured-collection {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.featured-collection .card {
+    height: 300px;
+    background-color: #cd5b9f;
+}
+
+.featured-collection .card-body {
+    height: fit-content;
+}
+
+.featured-collection .card-body h1 {
+    color: #f1f1f1;
+    margin: 0;
+}
+
+/*footer*/
+.footer {
+    height: fit-content;
+    padding: 20px 0 20px 0;
+    margin-top: 50px;
+    color: rgb(138, 138, 138);
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-top {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-top div {
+    width: 300px;
+}
+
+.footer hr {
+    width: 90%;
+}
+
+.footer-bottom {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+/*resorts listing page*/
+.resorts-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.filter-box {
+    flex: 1;
+    height: 600px;
+    position: sticky;
+    top: 20px;
+}
+
+.filter-card {
+    margin: 10px;
+    height: 580px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+.list-box {
+    flex: 3;
+}
+
+.list-card {
+    margin: 10px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-card-img {
+    height: 100%;
+    flex: 3;
+}
+.list-card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.list-card-info {
+    height: 100%;
+    flex: 3;
+}
+.list-card-tag {
+    border-radius: 50px;
+    font-size: 12px;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 100px;
+}
+.list-card-info div {
+    margin: 15px;
+}
+.list-card-info h2 {
+    margin: 15px;
+}
+.list-card-info p {
+    margin: 15px;
+    height: 193px;
+    overflow-y: scroll;
+}
+
+.list-card-price {
+    height: 100%;
+    flex: 1;
+}
+.list-card-price h2 {
+    margin: 15px 15px 0 15px;
+}
+
+/*desc page*/
+.resort-desc {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.desc-header h2 {
+    margin: 20px;
+}
+.desc-header div {
+    margin: 20px;
+}
+
+.desc-img {
+    display: flex;
+    height: 400px;
+}
+.desc-img img {
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 0;
+}
+
+.desc-main-img {
+    flex: 1;
+    margin: 10px;
+}
+.desc-s-imgs {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.desc-main-img img{
+    height: 100%;
+    width: 100%;
+}
+.desc-s-imgs img {
+    margin: 5px;
+    height: 45%;
+    width: 45%;
+}
+
+.desc-body {
+    display: flex;
+}
+.desc-body section {
+    flex: 4;
+    margin: 30px 50px 30px 10px;
+}
+.desc-body section p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.desc-body div {
+    height: 300px;
+    flex: 1;
+}
+.booking-card {
+    margin: 50px 10px 30px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.desc-review p {
+    margin: 10px;
+}
+
+/*login page*/
+.login {
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 60%;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.left,.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.or{
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    padding: 10px;
+    color: gray;
+    background-color: white;
+    font-weight: bold;
+}
+
+.line{
+    width: 0.5px;
+    height: 70%;
+    background-color: lightgray;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.loginButton{
+    width: 150px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+  
+.google{
+    background-color: #df4930;
+}
+.facebook{
+    background-color: #507cc0;
+}
+.github{
+    background-color: black;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.login-input{
+    width: 200px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+  
+.submit{
+    width: 200px;
+    background-color: rgba(128, 0, 128, 0.671);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.loginTitle{
+    position: absolute;
+    top: 150px;
+    color:rgb(33, 33, 33)
+}
+
+/*sign up*/
+.signup {
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-wrapper {
+    /* width: 80%;
+    height: 30%; */
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.signup-title {
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1620px){
+    main {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .searchbox {
+        display: none;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .menu-logo {
+        display: block;
+    }
+
+    .filter-box {
+        display: none;
+    }
+
+    .list-box {
+        width: 100%;
+    }
+    
+    /*login page*/
+
+    .wrapper {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .loginTitle {
+        display: none;
+    }
+
+    .center {
+        flex: 1;
+        width: 100%;
+        position: relative;
+    }
+
+    .left {
+        justify-content: flex-end;
+        flex: 3;
+        padding: 20px;
+    }
+
+    .right {
+        flex: 3;
+        padding: 20px;
+    }
+
+    .line {
+        height: 0.5px;
+        width: 80%;
+    }
+
+    /* desc page */
+    main {
+        width: 100%;
+    }
+
+    .desc-img {
+        display: inline;
+    }
+
+    .desc-s-imgs {
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .desc-s-imgs img {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* desc page */
+    main {
+        width: 100%;
+    }
+
+    .resort-desc {
+        width: 100%;
+    }
+
+    .desc-img {
+        display: inline;
+    }
+
+    .desc-main-img {
+        margin: 10px 20px;
+    }
+
+    .desc-s-imgs {
+        display: flex;
+        overflow: scroll;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    .desc-s-imgs img {
+        width: 80%;
+        margin: 0 10px;
+    }
+
+    .desc-body {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .booking-card {
+        margin: 30px 20px 20px 20px;
+    }
+
+    .desc-body section {
+        margin: 0 20px;
+    }
 }

@@ -1,0 +1,153 @@
+{
+    "resorts": [
+
+        { 
+          "id": 1, 
+          "title": "Henderson Beach Resort", 
+          "price": 564.00, 
+          "img": [""],
+          "desc": ["This property is a 6-minute walk from the beach. Henderson Beach Resort is located adjacent to Henderson Beach State Park and offers private beach access. Guests can take a refreshing plunge in one of the property's 2 pools or unwind in the full service spa. Several dining options are available on site that guests are sure to enjoy. 30,000 square feet of meeting and event space is available as well. Complimentary WiFi is provided for all guests.", "Rooms feature a flat-screen TV with cable channels and a coffee maker. A balcony with a view of either the pool, ocean, or courtyard is provided as well. Guests can enjoy access to the in-room mini bar and refreshment counter. Select rooms include a sofa bed.", "Guests can work up a sweat in the on-site fitness center. The business center is perfect for business travelers. The resort provides a variety of activities including paddle boarding, biking, and kayaking.", "Offering a resort view, Primrose is a full-service restaurant that serves fresh seafood and steaks. Horizons offers panoramic views of the Gulf Coast. It features an octagon-shaped bar and serves fresh seafood, as well as a variety of additional menu items. Sea Level Pool Grill is a casual dining option that offers snacks and lunch items.", "HarborWalk Village is 5 mi from Henderson Beach Resort. The nearest airport is Destin-Fort Walton Beach Airport, 8.7 mi from the property.", "Couples in particular like the location, they rated it 9.3 for a two-person trip."],
+          "Type": "Resort",
+          "Rules": ["Guests are required to show a photo ID and credit card at check-in", "Cancellation and prepayment policies vary according to accommodations type. Check what conditions might apply to each option when making your selection.", "This property doesn't offer extra beds.", "The minimum age for check-in is 21", "Pets are allowed. Charges may apply."],
+          "Amenities": ["1 swimming pool", "Non-smoking rooms", "Free WiFi", "Pet friendly", "Airport shuttle", "Facilities for disabled guests", "Parking on site", "Bar", "Private beach area"],
+          "location": {
+            "street": "200 Henderson Resort Way",
+            "state": "Destin",
+            "postalCode": "32541",
+            "country": "USA"
+          },
+          "featured": true 
+        },
+
+        { 
+          "id": 2, 
+          "title": "House By The Beach", 
+          "price": 351.00, 
+          "img": [""],
+          "desc": ["This property is 3 minutes walk from the beach. Located in Eilat in the South District Israel region, with Kisuski Beach and HaPnina Beach nearby, House By The Beach provides accommodations with free WiFi and free private parking.", "Featuring a kitchen with a microwave and a fridge, each unit also comes with a satellite flat-screen TV, ironing facilities, desk and a seating area with a sofa. There's a fully equipped private bathroom with shower and a hairdryer.", "The apartment has a terrace.", "Miki Beach is a 6-minute walk from House By The Beach, while Eilat Botanical Garden is 2.7 km away. The nearest airport is Eilat Ramon Airport, 19.3 km from the accommodation."],
+          "Type": "Apartment",
+          "Rules": ["Guests are required to show a photo ID and credit card at check-in", "Cancellation and prepayment policies vary according to accommodations type. Check what conditions might apply to each option when making your selection.", "This property doesn't offer extra beds.", "The minimum age for check-in is 21", "Pets are allowed. Charges may apply."],
+          "Amenities": ["1 swimming pool", "Non-smoking rooms", "Free WiFi", "Pet friendly", "Airport shuttle", "Facilities for disabled guests", "Parking on site", "Bar", "Private beach area"],
+          "location": {
+            "street": "6002 Street",
+            "state": "Eilat",
+            "postalCode": "88000",
+            "country": "Israel"
+          },
+          "featured": false 
+        },
+
+        { 
+          "id": 3, 
+          "title": "The Buah Bali Villas", 
+          "price": 174.00, 
+          "img": [""],
+          "desc": ["This property is a 8-minute walk from the beach. The Buah Bali Villas is located within 8 minutes' walk from Petitenget Beach. It features villas with private pools and kitchenettes. For extra convenience, guests can also get free mini WiFi modem to be used outside the villa during their stay. Due to the Corona Virus's spreading the villa has installed air purifier to sterilize the air in the bedroom.", "The Buah Bali Villas provides a free shuttle service to Kuta and Seminyak, and from Ngurah Rai International Airport. The property is a 3-minute drive from central Seminyak, 20-minute drive from Kuta area and a 30-minute drive from Ngurah Rai International Airport.", "The modern Balinese-style villas are entered through a private entrance and are fitted with a microwave oven and free mini-bar. Guests can enjoy free DVD and CD rentals from the front desk, and watch these in the comfort of their villas.", "Free mountain bike rentals are available for those seeking to explore the surroundings. The resort offers pampering massage services and lush tropical gardens in the surroundings."],
+          "Type": "Villa",
+          "Rules": ["Guests are required to show a photo ID and credit card at check-in", "Cancellation and prepayment policies vary according to accommodations type. Check what conditions might apply to each option when making your selection.", "This property doesn't offer extra beds.", "The minimum age for check-in is 21", "Pets are allowed. Charges may apply."],
+          "Amenities": ["1 swimming pool", "Non-smoking rooms", "Free WiFi", "Pet friendly", "Airport shuttle", "Facilities for disabled guests", "Parking on site", "Bar", "Private beach area"],
+          "location": {
+            "street": "Jl. Petitenget, Gg. Cempaka",
+            "state": "Seminyak",
+            "postalCode": "80361",
+            "country": "Indonesia"
+          },
+          "featured": true 
+        },
+
+        { 
+          "id": 4, 
+          "title": "Auberge HI Montreal Hostel", 
+          "price": 104.00, 
+          "img": [""],
+          "desc": ["This hostel in Montreal city center is just 2 minutes’ walk from Lucien-L’Allier Metro Station.", "All rooms at Auberge HI Montreal are air-conditioned, have access to free WiFi and have an private bathroom. Bed sheets are provided and a continental breakfast is served every morning free of charge.", "For better comfort, HI Montreal gives guests access to a fully equipped kitchen, laundry facilities and daily activities free of charge. Guests can meet other travelers in the on-site bar and restaurant.", "The bars and restaurants on Sainte-Catherine and Crescent Streets are within 5 minutes’ walk. The Museum of Fine Arts, as well as Concordia and McGill universities are less than 1.2 mi away."],
+          "Type": "Hostel",
+          "Rules": ["Guests are required to show a photo ID and credit card at check-in", "Cancellation and prepayment policies vary according to accommodations type. Check what conditions might apply to each option when making your selection.", "This property doesn't offer extra beds.", "The minimum age for check-in is 21", "Pets are allowed. Charges may apply."],
+          "Amenities": ["1 swimming pool", "Non-smoking rooms", "Free WiFi", "Pet friendly", "Airport shuttle", "Facilities for disabled guests", "Parking on site", "Bar", "Private beach area"],
+          "location": {
+            "street": "1030 MacKay",
+            "state": "Montreal",
+            "postalCode": "H3G 2H1",
+            "country": "Canada"
+          },
+          "featured": false 
+        },
+
+        { 
+          "id": 5, 
+          "title": "Brú Guesthouse", 
+          "price": 211.00, 
+          "img": [""],
+          "desc": ["Located in Hólmabæir, 30.6 km from Skogar, Brú Guesthouse provides a terrace and free WiFi.", "The units come with hardwood floors and feature a fully equipped kitchenette with a microwave, a dining area, a flat-screen TV with satellite channels, and a private bathroom with shower and bathrobes. Some units are air-conditioned and include a patio and/or a balcony, as well as a seating area.", "Vestmannaeyjar is 27.4 km from the lodge, while Hella is 25.7 km away.", "Couples in particular like the location – they rated it 9.4 for a two-person trip."],
+          "Type": "Cottage",
+          "Rules": ["Guests are required to show a photo ID and credit card at check-in", "Cancellation and prepayment policies vary according to accommodations type. Check what conditions might apply to each option when making your selection.", "This property doesn't offer extra beds.", "The minimum age for check-in is 21", "Pets are allowed. Charges may apply."],
+          "Amenities": ["1 swimming pool", "Non-smoking rooms", "Free WiFi", "Pet friendly", "Airport shuttle", "Facilities for disabled guests", "Parking on site", "Bar", "Private beach area"],
+          "location": {
+            "street": "Brú, 861",
+            "state": "Hólmabæir",
+            "postalCode": "",
+            "country": "Iceland"
+          },
+          "featured": true 
+        },
+
+        { 
+          "id": 6, 
+          "title": "China Mayors Plaza", 
+          "price": 134.00, 
+          "img": [""],
+          "desc": ["Towering over Tianhe District in a golden building, Mayors Plaza offers air-conditioned rooms with cable TV and free wired internet. It is a 3-minute walk from Lin He Xi Metro Station. Pazhou Complex can be approached by a 20-minute drive and free shuttle service is provided during Canton Fair.", "China Mayors Plaza is 100 m from Tianhe Stadium. It is within 5 mi distance of downtown Guangzhou and Guangzhou Railway Station. It is a 5-minute drive from Guangzhou East Railway Station and a 15-minute drive from Canton Tower. Baiyun International Airport is about 55 minutes' drive away. It's also a 2-hour train ride to Kowloon, Hong Kong.", "Featuring classic interiors in neutral shades, air-conditioned rooms come with a safe, tea/coffee maker and a mini-bar. Private bathrooms have a bathtub and hairdryer.", "Guests can work out at the gym, relax in the sauna or with a soothing massage after a day of activity. The hotel has a business center and can provide concierge and tour services."],
+          "Type": "Hostel",
+          "Rules": ["Guests are required to show a photo ID and credit card at check-in", "Cancellation and prepayment policies vary according to accommodations type. Check what conditions might apply to each option when making your selection.", "This property doesn't offer extra beds.", "The minimum age for check-in is 21", "Pets are allowed. Charges may apply."],
+          "Amenities": ["1 swimming pool", "Non-smoking rooms", "Free WiFi", "Pet friendly", "Airport shuttle", "Facilities for disabled guests", "Parking on site", "Bar", "Private beach area"],
+          "location": {
+            "street": "189 North Tianhe Road, Tian He, Guangzhou",
+            "state": "Guangdong",
+            "postalCode": "510620",
+            "country": "China"
+          },
+          "featured": false 
+        },
+
+        { 
+          "id": 7, 
+          "title": "Labranda Club Makadi", 
+          "price": 82.00, 
+          "img": [""],
+          "desc": ["Labranda Club Makadi Located in Makadi Bay, only a few minutes' drive from the Makadi and Soma Bay golf course, featuring an amazing Beach, outdoor pool, and spa. It offers a mini club, kids club, and kids pool.", "The hotel has 339 rooms overlooking the pool, garden, and the private beach. All rooms have balconies or terrace facing the pool or the garden or the beach. LCD TV with satellite, safe box and mini-bar are available in all rooms.", "LABRANDA Club Makadi offers an array of restaurants, combined with an access to LABRANDA Food Promenade which features amazing dining outlets: “Rock & Roll Burger House”, “Café Cairo” and Gelateria “Giardino Delle Rose”. A Greek outlet “ Taverna Paros”, Cuban “Pequena Habana”, “Yum Asian Kitchen & Bar” with an added charge.", "A wide selection of activities are available at the hotel, ranging from water sports, snorkeling, canoeing, and on land two tennis courts, tennis table and billiard. Guests can enjoy the scuba diving and horse riding as well with an added charge."],
+          "Type": "Resort",
+          "Rules": ["Guests are required to show a photo ID and credit card at check-in", "Cancellation and prepayment policies vary according to accommodations type. Check what conditions might apply to each option when making your selection.", "This property doesn't offer extra beds.", "The minimum age for check-in is 21", "Pets are allowed. Charges may apply."],
+          "Amenities": ["1 swimming pool", "Non-smoking rooms", "Free WiFi", "Pet friendly", "Airport shuttle", "Facilities for disabled guests", "Parking on site", "Bar", "Private beach area"],
+          "location": {
+            "street": "KM 34 Hurghada-Safaga Road, Makadi Bay",
+            "state": "Hurghada",
+            "postalCode": "99999",
+            "country": "Egypt"
+          },
+          "featured": true 
+        },
+
+        { 
+          "id": 8, 
+          "title": "Jedi meets Harry Potter Cottage", 
+          "price": 222.00, 
+          "img": [""],
+          "desc": ["Jedi meets Harry Potter Cottage is located in Davenport and offers an outdoor swimming pool and a garden. The air-conditioned property is 40.2 km from Lakeland, and guests benefit from complimentary WiFi and private parking available on site.", "The villa has 2 bedrooms, a flat-screen TV and a fully equipped kitchen that provides guests with a dishwasher, a microwave, a washing machine, a fridge and an oven. Towels and bed linen are provided.", "The villa provides a playground.", "Orlando is 38.6 km from Jedi meets Harry Potter Cottage, while Kissimmee is 24.1 km away. The nearest airport is Orlando International Airport, 38.6 km from the accommodation."],
+          "Type": "Villa",
+          "Rules": ["Guests are required to show a photo ID and credit card at check-in", "Cancellation and prepayment policies vary according to accommodations type. Check what conditions might apply to each option when making your selection.", "This property doesn't offer extra beds.", "The minimum age for check-in is 21", "Pets are allowed. Charges may apply."],
+          "Amenities": ["1 swimming pool", "Non-smoking rooms", "Free WiFi", "Pet friendly", "Airport shuttle", "Facilities for disabled guests", "Parking on site", "Bar", "Private beach area"],
+          "location": {
+            "street": "543 Queen Palm Drive, Davenport",
+            "state": "FL",
+            "postalCode": "33897",
+            "country": "USA"
+          },
+          "featured": false 
+        }
+        
+    ],
+    
+    "users": [
+        
+    ]
+}

@@ -23,7 +23,7 @@ const FeaturedCollection = () => {
   /* get no-repeat types array */
   const collection = allType.filter(
     (ele, pos) => {
-      return allType.indexOf(ele) == pos;
+      return allType.indexOf(ele) === pos;
     }
   )
   console.log(collection);
@@ -38,7 +38,7 @@ const FeaturedCollection = () => {
   return (
     <section className='featured-collection-section'>
 
-      <h2>Featured Collections</h2>
+      <h1>Featured Collections</h1>
 
       <div className='featured-collection'>
         

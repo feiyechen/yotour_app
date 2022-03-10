@@ -8,7 +8,7 @@ const LoginPage = () => {
     <>
       <Navbar />
 
-      <main>
+      <main className='login-container'>
         <LoginForm />
       </main>
 

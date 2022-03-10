@@ -38,7 +38,7 @@ const ResortDescPage = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className='resort-desc-main'>
 
         <ResortDesc 
           title={resort.title}

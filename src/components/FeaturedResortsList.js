@@ -18,7 +18,7 @@ const FeaturedResortsList = () => {
   return (
     <section className='featured-resorts-section'>
 
-      <h2>Featured Resorts</h2>
+      <h1>Featured Resorts</h1>
 
       <div className='featured-resorts'>
         

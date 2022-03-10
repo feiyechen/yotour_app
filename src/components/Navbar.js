@@ -24,23 +24,25 @@ const Navbar = () => {
             </span>
           </Link>
 
+          {/* under iPad will disappear */}
           <span className='searchbox'>
             <input type='text' placeholder='Search your resort' />
             <button>Search</button>
           </span>
 
+          {/* under iPad will disappear */}
           <ul className='navbar-list'>
             <Link to='/resorts'>
               <li>
                 All Resorts
               </li>
             </Link>
-            
             <li>
               <NavbarLogin />
             </li>
           </ul>
 
+          {/* under iPad will show */}
           <img 
             className='menu-logo' 
             src={menuLogo} alt='' 

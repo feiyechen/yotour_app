@@ -831,6 +831,12 @@ p {
             margin: 20px 0;
         }
 
+        .signup-title {
+            font-size: large;
+            margin: 20px 0;
+            padding: 0;
+        }
+
         .login-container {
             margin: 0;
             height: 100%;

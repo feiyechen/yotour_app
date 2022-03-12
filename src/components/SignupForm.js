@@ -3,26 +3,47 @@ import React, { useState } from 'react'
 const SignupForm = () => {
 
   const [email, setEmail] = useState("");
-  const [username, setUsername] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [password, setPassword] = useState("");
+  const [signedUp, setSignedUp] = useState(false);
+
+  const validateEmail = (text) => {
+    var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(text.match(mailFormat)){
+      return true;
+    }else{
+      return false;
+    }
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(email !== '' && username !== '' && password !== '') {
-      const user = { email, username, password };
+    if(email !== '' && firstName !== '' && lastName !== '' && password !== '') {
 
-      fetch("https://yotour-server.herokuapp.com/users", {
-        method: 'POST',
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(user)
-      }).then(() => {
-        setEmail("");
-        setUsername("");
-        setPassword("");
-      }).then(() => {
-        window.alert("Successfully registered!");
-      })
+      if(validateEmail(email)){
+
+        // console.log("email validated");
+
+        const user = { email, firstName, lastName, password };
+
+        fetch("https://yotour-server.herokuapp.com/users", {
+          method: 'POST',
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(user)
+        }).then(() => {
+          setEmail("");
+          setFirstName("");
+          setLastName("");
+          setPassword("");
+          setSignedUp(true);
+        })
+
+      } else {
+        window.alert("Not a valid Email address!");
+      }
+
     } else {
       window.alert("All fields are required!");
     }
@@ -47,9 +68,16 @@ const SignupForm = () => {
               className='login-input' 
               type='text'
               required
-              placeholder='Username'
-              value={username}
-              onChange = {e => setUsername(e.target.value)} />
+              placeholder='First Name'
+              value={firstName}
+              onChange = {e => setFirstName(e.target.value)} />
+            <input 
+              className='login-input' 
+              type='text'
+              required
+              placeholder='Last Name'
+              value={lastName}
+              onChange = {e => setLastName(e.target.value)} />
             <input 
               className='login-input' 
               type='text'
@@ -57,6 +85,12 @@ const SignupForm = () => {
               placeholder='Password' 
               value={password}
               onChange = {e => setPassword(e.target.value)} />
+            
+            {signedUp ? (
+              <div>
+                <p>Sign Up successfully! Let's <a className='signup-login' href='/login'>Login</a></p>
+              </div>
+            ) : (<></>)}
 
             <button className='submit' onClick={handleSubmit}>Sign Up</button>
                        

@@ -47,7 +47,8 @@ const ResortDescPage = () => {
           desc={resort.desc}
           rule={resort.Rules}
           amenities={resort.Amenities}
-          location={resort.location}  
+          location={resort.location}
+          img={resort.img}  
         />
 
       </main>

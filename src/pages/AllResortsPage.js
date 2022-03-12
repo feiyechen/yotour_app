@@ -34,7 +34,10 @@ const AllResortsPage = () => {
                 title={item.title}
                 price={item.price}
                 type={item.Type}
-                desc={item.desc[0]}/>
+                location={item.location}
+                desc={item.desc[0]}
+                img={item.img}
+                featured={item.featured}/>
             ))}
 
           </div>

@@ -28,7 +28,8 @@ const FeaturedResortsList = () => {
             title={item.title}
             price={item.price}
             type={item.Type}
-            desc={item.desc[0]}/>
+            desc={item.desc[0]}
+            img={item.img}/>
         ))}
 
       </div>

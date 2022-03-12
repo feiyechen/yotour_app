@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ResortCard = ({id, title, price, type, desc}) => {
+const ResortCard = ({id, title, price, type, desc, img}) => {
   return (
     <div className="card">
 
       
         <div className="card-img">
           <Link to = {`/resorts/${id}`}>
-            <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="" />
+            <img src={img[0]} alt="" />
           </Link>
         </div>
       

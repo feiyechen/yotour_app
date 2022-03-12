@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ResortDesc = ({ title, type, desc, price, rule, amenities, location }) => {
+const ResortDesc = ({ title, type, desc, price, rule, amenities, location, img }) => {
 
   return (
     <section className='resort-desc'>
@@ -17,22 +17,22 @@ const ResortDesc = ({ title, type, desc, price, rule, amenities, location }) => 
             <div className='desc-main-img'>
               <img 
                 className='img1' 
-                src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="" />
+                src={img[0]} alt="" />
             </div>
 
             <div className='desc-s-imgs'>
               <img 
                 className='img2' 
-                src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="" />
+                src={img[1]} alt="" />
               <img 
                 className='img3' 
-                src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="" />
+                src={img[2]} alt="" />
               <img 
                 className='img4' 
-                src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="" />
+                src={img[3]} alt="" />
               <img 
                 className='img5' 
-                src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="" />
+                src={img[4]} alt="" />
             </div>
         </div>
 

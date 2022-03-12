@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom' 
+import menu from '../assets/img/menu_grey.png'
+import avatar from '../assets/img/avatar.png'
 
 const NavbarLogin = () => {
 
@@ -16,7 +18,10 @@ const NavbarLogin = () => {
         <button 
             className='navbar-dropdown-btn'
             onClick={toggleDropdown}
-        >Dropdown</button>
+        >
+            <img src={menu} alt='' />
+            <img className='avatar' src={avatar} alt='' />
+        </button>
         
         {dropdownClose ? (
             <span></span>

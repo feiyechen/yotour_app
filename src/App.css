@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+.signup-login {
+    color: blue;
+}
+
 p {
     text-align: justify;
 }
@@ -108,9 +112,21 @@ p {
 
 .navbar-dropdown-btn {
     height: 40px;
-    width: 80px;
+    width: 100px;
     border-radius: 20px 20px 20px 20px;
     border: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-dropdown-btn img {
+    width: 30%;
+}
+
+.navbar-dropdown-btn .avatar {
+    width: 37%;
+    border-radius: 50%;
 }
 
 .navbar-dropdown-content {
@@ -155,7 +171,7 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    text-shadow: 0px 0px 20px rgba(52,52,52,0.5);
+    text-shadow: 0px 0px 10px rgba(52,52,52,0.5);
 }
 
 .banner-section div {
@@ -186,7 +202,7 @@ p {
     height: 200px;
 }
 
-.tag {
+/* .tag {
     background: #cccccc;
     border-radius: 50px;
     font-size: 12px;
@@ -195,9 +211,13 @@ p {
     padding: 2px 10px;
     text-transform: uppercase;
     cursor: pointer;
-}
-.tag-pink {
+} */
+.tag-gold{
     background-color: #dfb323;
+}
+.tag-best-seller{
+    background-color: #ac2727;
+    margin-left: 10px;
 }
 
 .card-body h4 {
@@ -377,6 +397,9 @@ p {
     margin: 15px;
     /* height: 193px; */
     /* overflow-y: scroll; */
+}
+.list-card-info .location {
+    color: #b0b0b0;
 }
 
 .list-card-price {
@@ -566,6 +589,7 @@ p {
     border: none;
     padding: 15px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .loginTitle{
@@ -765,14 +789,16 @@ p {
 
     .desc-s-imgs {
         display: flex;
-        overflow: scroll;
+        overflow-x: scroll;
         flex-wrap: nowrap;
         margin: 0;
+        justify-content: flex-start;
     }
 
     .desc-s-imgs img {
         width: 80%;
-        margin: 0 10px;
+        margin: 0 10px 0 20px;
+        height: 200px;
     }
 
     .desc-body {
@@ -841,6 +867,11 @@ p {
             margin: 0;
             height: 100%;
             margin-bottom: 50px;
+        }
+
+        .list-card-info .desc {
+            height: 100px;
+            overflow-y: scroll;
         }
     }
 

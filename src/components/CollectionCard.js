@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import resorts from '../assets/img/resorts.jpg';
 
 const CollectionCard = ({ title }) => {
   return (
@@ -8,7 +9,7 @@ const CollectionCard = ({ title }) => {
 
         <Link to = {`/resorts/type/${title}`}>
             <div className="card-img">
-                <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="" />
+                <img src={resorts} alt="" />
             </div>
         
 

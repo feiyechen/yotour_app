@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ResortDesc = ({ title, type, desc, price, rule, amenities, location, img }) => {
+const ResortDesc = ({ title, type, desc, price, rule, amenities, location, img, featured }) => {
 
   return (
     <section className='resort-desc'>
@@ -8,7 +8,10 @@ const ResortDesc = ({ title, type, desc, price, rule, amenities, location, img }
         <div className='desc-header'>
             <h2>{title}</h2>
             <div>
-              <span className="list-card-tag tag-pink">{type}</span>
+              <span className="list-card-tag tag-gold">{type}</span>
+              {featured ? (
+                <span className="list-card-tag tag-best-seller">Best Seller</span>
+              ) : (<></>)}
               <p>{location.street}, {location.state}, {location.country}, {location.postalCode}</p>
             </div>
         </div>

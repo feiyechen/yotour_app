@@ -15,7 +15,7 @@ const ResortCard = ({id, title, price, type, desc, img}) => {
 
       <div className="card-body">
         <div className='card-body-header'>
-          <span className="tag tag-pink country">{type}</span>
+          <span className="tag tag-gold country">{type}</span>
           <span className='price'>${price}</span>
         </div>
         

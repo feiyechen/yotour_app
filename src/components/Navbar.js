@@ -32,7 +32,7 @@ const Navbar = () => {
 
           {/* under iPad will disappear */}
           <ul className='navbar-list'>
-            <Link to='/resorts'>
+            <Link to='/resorts/type/All'>
               <li>
                 All Resorts
               </li>

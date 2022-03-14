@@ -5,7 +5,7 @@ const NavbarMobile = () => {
   return (
     <div className='mobile-menu'>
         <div><Link to='/'>Search</Link></div>
-        <div><Link to='/resorts'>All Resorts</Link></div>
+        <div><Link to='/resorts/type/All'>All Resorts</Link></div>
         <div><Link to='/login'>Login</Link></div>
         <div><Link to='/signup'>Register</Link></div>
     </div>

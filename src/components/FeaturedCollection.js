@@ -18,7 +18,7 @@ const FeaturedCollection = () => {
   /* get all types array */
   const allType = [];
   resorts.map(item => (allType.push(item.Type)));
-  console.log(allType);
+  // console.log(allType);
 
   /* get no-repeat types array */
   const collection = allType.filter(
@@ -26,14 +26,16 @@ const FeaturedCollection = () => {
       return allType.indexOf(ele) === pos;
     }
   )
-  console.log(collection);
+  // console.log(collection);
 
   /* get the first 4 types */
   const featuredCollection = [];
   for(let i=0; i<4; i++){
     featuredCollection.push(collection[i]);
   }
-  console.log(featuredCollection);
+  // console.log(featuredCollection);
+
+
 
   return (
     <section className='featured-collection-section'>
@@ -50,6 +52,8 @@ const FeaturedCollection = () => {
       
     </section>
   )
+
+  
 }
 
 export default FeaturedCollection

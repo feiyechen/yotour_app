@@ -345,6 +345,20 @@ p {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filter-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.filter-card h3 {
+    margin-left: 20px;
 }
 
 .list-box {
@@ -750,8 +764,20 @@ p {
         margin: 0;
     }
 
+    .filter-selection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .resort-desc {
         width: 100%;
+    }
+
+
+    .list-card-info .desc {
+        height: 112px;
+        overflow-y: scroll;
     }
 
     /* .resort-desc-main {
@@ -843,7 +869,7 @@ p {
 
     .filter-card {
         width: 90%;
-        height: 100px;
+        height: 130px;
         margin: 0 auto;
     }
 
@@ -855,6 +881,10 @@ p {
         .loginTitle {
             font-size: large;
             margin: 20px 0;
+        }
+
+        .signup {
+            padding-top: 20px;
         }
 
         .signup-title {

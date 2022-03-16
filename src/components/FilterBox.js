@@ -17,7 +17,7 @@ const FilterBox = ({ types, change }) => {
                 <div>
                   <Link to = {`/resorts/type/${item.Type}`}>
                     <input type="checkbox" id={item.Type} name="type" value={item.Type} checked={item.Selected} onChange={() => change(item.Type)}/>
-                    <label htmlFor={item.Type}> {item.Type} {`Checked: ${item.Selected}`}</label>
+                    <label htmlFor={item.Type}> {item.Type} {`Checked: ${item.Selected}`} </label>
                   </Link>
                 </div>
               

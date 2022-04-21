@@ -12,22 +12,22 @@ const ResortDescPage = () => {
     price: 0, 
     img: [],
     desc: [],
-    Type: "",
-    Rules: [],
-    Amenities: [],
+    type: "",
+    rules: [],
+    amenities: [],
     location: {
       street: "",
       state: "",
       postalCode: "",
       country: ""
     },
-    featured: true 
+    featured: false 
   });
 
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`https://yotour-server.herokuapp.com/resorts/${id}`)
+    fetch(`http://localhost:8080/resorts/${id}`)
     .then(response => response.json())
     .then(json => setResort(json))
     .catch(err => console.log(`Error ${err}`))
@@ -40,13 +40,13 @@ const ResortDescPage = () => {
       <Navbar />
       <main className='resort-desc-main'>
 
-        <ResortDesc 
+        <ResortDesc
           title={resort.title}
           price={resort.price}
-          type={resort.Type}
+          type={resort.type}
           desc={resort.desc}
-          rule={resort.Rules}
-          amenities={resort.Amenities}
+          rule={resort.rules}
+          amenities={resort.amenities}
           location={resort.location}
           img={resort.img} 
           featured={resort.featured} 

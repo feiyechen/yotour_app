@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 
 const SignupForm = () => {
 
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
   const [password, setPassword] = useState("");
   const [signedUp, setSignedUp] = useState(false);
 
@@ -20,22 +21,25 @@ const SignupForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(email !== '' && firstName !== '' && lastName !== '' && password !== '') {
+    if(email !== '' && username !== '' && fName !== '' && lName !== '' && password !== '') {
 
       if(validateEmail(email)){
 
-        // console.log("email validated");
+        console.log("email validated");
 
-        const user = { email, firstName, lastName, password };
+        //need validate duplicated email & username???
 
-        fetch("https://yotour-server.herokuapp.com/users", {
+        const user = { email, username, fName, lName, password };
+
+        //post to api
+        fetch("http://localhost:8080/users", {
           method: 'POST',
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(user)
         }).then(() => {
           setEmail("");
-          setFirstName("");
-          setLastName("");
+          setFName("");
+          setLName("");
           setPassword("");
           setSignedUp(true);
         })
@@ -61,29 +65,31 @@ const SignupForm = () => {
               className='login-input' 
               type='text'
               required
+              placeholder='Username' 
+              onChange = {e => setUsername(e.target.value)} />
+            <input 
+              className='login-input' 
+              type='text'
+              required
               placeholder='Email' 
-              value={email}
               onChange = {e => setEmail(e.target.value)} />
             <input 
               className='login-input' 
               type='text'
               required
               placeholder='First Name'
-              value={firstName}
-              onChange = {e => setFirstName(e.target.value)} />
+              onChange = {e => setFName(e.target.value)} />
             <input 
               className='login-input' 
               type='text'
               required
               placeholder='Last Name'
-              value={lastName}
-              onChange = {e => setLastName(e.target.value)} />
+              onChange = {e => setLName(e.target.value)} />
             <input 
               className='login-input' 
               type='text'
               required
               placeholder='Password' 
-              value={password}
               onChange = {e => setPassword(e.target.value)} />
             
             {signedUp ? (

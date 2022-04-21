@@ -6,7 +6,7 @@ const FeaturedResortsList = () => {
   const [resorts, setResorts] = useState([]);
 
   useEffect(() => {
-    fetch("https://yotour-server.herokuapp.com/resorts")
+    fetch("http://localhost:8080/resorts")
     .then(response => response.json())
     .then(json => {
       setResorts(json)
@@ -24,10 +24,11 @@ const FeaturedResortsList = () => {
         
         {resorts.filter(item => item.featured === true).map(item => (
           <ResortCard 
+            key={item.id}
             id={item.id} 
             title={item.title}
             price={item.price}
-            type={item.Type}
+            type={item.type}
             desc={item.desc[0]}
             img={item.img}/>
         ))}

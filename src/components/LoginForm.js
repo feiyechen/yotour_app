@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Facebook from '../assets/img/facebook.png';
 import Google from '../assets/img/google.png';
 import GitHub from '../assets/img/github.png';
 
 const LoginForm = () => {
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = e => {
+      e.preventDefault();
+      if(username !== '' && password !== ''){
+
+        const user = { username, password };
+
+        fetch("http://localhost:8080/auth", {
+            method: 'POST',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(user)
+        }).then(res => res.json())
+        .then(json => console.log(json))
+        .then(()=>{
+            setUsername("");
+            setPassword("");
+        }).catch(err => console.log(`Error ${err}`));
+
+      }else{
+        window.alert("All fields are required!");
+      }
+  }
+
   return (
     <div>
         <h1 className='loginTitle'>Choose your login method</h1>
@@ -32,9 +58,23 @@ const LoginForm = () => {
                 </div>
 
                 <div className='right'>
-                    <input className='login-input' type='text' placeholder='Username' />
-                    <input className='login-input' type='text' placeholder='Password' />
-                    <button className='submit'>Login</button>
+                    <input 
+                        className='login-input' 
+                        type='text' 
+                        placeholder='Username' 
+                        onChange={e => {
+                            setUsername(e.target.value)
+                        }} 
+                    />
+                    <input 
+                        className='login-input' 
+                        type='text' 
+                        placeholder='Password'
+                        onChange={e => {
+                            setPassword(e.target.value)
+                        }}
+                    />
+                    <button className='submit' onClick={handleLogin}>Login</button>
                 </div>
                 
             </div>

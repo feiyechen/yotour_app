@@ -6,7 +6,7 @@ const FeaturedCollection = () => {
   const [resorts, setResorts] = useState([]);
 
   useEffect(() => {
-    fetch("https://yotour-server.herokuapp.com/resorts")
+    fetch("http://localhost:8080/resorts")
     .then(response => response.json())
     .then(json => {
       setResorts(json)
@@ -17,7 +17,7 @@ const FeaturedCollection = () => {
 
   /* get all types array */
   const allType = [];
-  resorts.map(item => (allType.push(item.Type)));
+  resorts.map(item => (allType.push(item.type)));
   // console.log(allType);
 
   /* get no-repeat types array */

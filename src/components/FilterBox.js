@@ -15,9 +15,9 @@ const FilterBox = ({ types, change }) => {
             types.map(item => (
               
                 <>
-                  <Link to = {`/resorts/type/${item.Type}`}>
-                    <input type="checkbox" id={item.Type} name="type" value={item.Type} checked={item.Selected} onClick={() => change(item.Type)}/>
-                    <label htmlFor={item.Type} onClick={() => change(item.Type)}> {item.Type} </label>
+                  <Link to = {`/resorts/type/${item.type}`}>
+                    <input type="checkbox" id={item.type} name="type" value={item.type} checked={item.Selected} onClick={() => change(item.type)}/>
+                    <label htmlFor={item.type} onClick={() => change(item.type)}> {item.type} </label>
                     {/* <label htmlFor={item.Type} onClick={() => change(item.Type)}> {item.Type} {`Checked: ${item.Selected}`}</label> */}
                   </Link>
                 </>

@@ -16,7 +16,7 @@ const ResortCollectionPage = () => {
   const getTypesByResorts = (resorts) => {
     /* get all types array */
     const allTypes = ["All"];
-    resorts.map(item => (allTypes.push(item.Type)));
+    resorts.map(item => (allTypes.push(item.type)));
 
     /* get no-repeat types array */
     const types = allTypes.filter(
@@ -29,9 +29,9 @@ const ResortCollectionPage = () => {
     const typesObj = [];
     types.map(item => (
       item === type ? (
-        typesObj.push({Type: item, Selected: true})
+        typesObj.push({type: item, Selected: true})
       ) : (
-        typesObj.push({Type: item, Selected: false})
+        typesObj.push({type: item, Selected: false})
       )
     ))
 
@@ -41,10 +41,10 @@ const ResortCollectionPage = () => {
   const changeSelected = (typeName) => {
     const newTypes = []
     types.map(item => (
-      item.Type === typeName ? (
-        newTypes.push({Type: item.Type, Selected: true})
+      item.type === typeName ? (
+        newTypes.push({type: item.type, Selected: true})
       ) : (
-        newTypes.push({Type: item.Type, Selected: false})
+        newTypes.push({type: item.type, Selected: false})
       )
     ))
     setTypes(newTypes);
@@ -52,7 +52,7 @@ const ResortCollectionPage = () => {
   }
 
   useEffect(() => {
-    fetch("https://yotour-server.herokuapp.com/resorts")
+    fetch("http://localhost:8080/resorts")
     .then(response => response.json())
     .then(json => {
 
@@ -82,19 +82,19 @@ const ResortCollectionPage = () => {
                     id={item.id}
                     title={item.title}
                     price={item.price}
-                    type={item.Type}
+                    type={item.type}
                     location={item.location}
                     desc={item.desc[0]}
                     img={item.img}
                     featured={item.featured}/>
                 ))
               ) : (
-                resorts.filter(item => item.Type === type).map(item => (
+                resorts.filter(item => item.type === type).map(item => (
                   <ListingCard
                     id={item.id}
                     title={item.title}
                     price={item.price}
-                    type={item.Type}
+                    type={item.type}
                     location={item.location}
                     desc={item.desc[0]}
                     img={item.img}

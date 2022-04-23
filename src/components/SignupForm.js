@@ -32,7 +32,7 @@ const SignupForm = () => {
         const user = { email, username, fName, lName, password };
 
         //post to api
-        fetch("http://localhost:8080/users", {
+        fetch("http://localhost:8080/users/signup", {
           method: 'POST',
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(user)

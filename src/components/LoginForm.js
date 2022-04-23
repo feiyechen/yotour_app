@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import Facebook from '../assets/img/facebook.png';
 import Google from '../assets/img/google.png';
 import GitHub from '../assets/img/github.png';
+import { useDispatch } from 'react-redux';
+import { loginSuccess } from '../redux/userReducer';
 
 const LoginForm = () => {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const dispatch = useDispatch();
 
   const handleLogin = e => {
       e.preventDefault();
@@ -19,7 +23,11 @@ const LoginForm = () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(user)
         }).then(res => res.json())
-        .then(json => console.log(json))
+        .then(json => {
+            console.log(json);
+            dispatch(loginSuccess(json));
+            window.location.href = "/account";
+        })
         .then(()=>{
             setUsername("");
             setPassword("");

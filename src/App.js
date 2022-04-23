@@ -8,6 +8,7 @@ import ResortCollectionPage from './pages/ResortCollectionPage';
 import ResortDescPage from './pages/ResortDescPage';
 import SearchResultPage from './pages/SearchResultPage';
 import SearchPage from './pages/SearchPage';
+import AccountPage from './pages/AccountPage';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/resorts/:id' element={<ResortDescPage />} />
         <Route path='/search/:input' element={<SearchResultPage />} />
         <Route path='/search' element={<SearchPage />} />
+        <Route path='/account' element={<AccountPage />} />
 
       </Routes>
     </BrowserRouter>
